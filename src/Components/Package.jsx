@@ -11,7 +11,7 @@ const Package  = ({title, pledge, infotext, classname, left, setIsModalOpen, btn
             <Mini className='maxflex'>
                 <Title className='package'>{left} <sup style={{fontSize : '12px', fontWeight: 300, color:"#b4b1b1"}}>left</sup></Title>
                 <Button className={`${btn} btnleft` }onClick={() => setIsModalOpen(true)}> 
-                    <a href='#modal' style={{textDecoration:"none", color: "white"}} >Select Reward</a> 
+                    <a href='#modal' style={{textDecoration:"none", color: "white"}} >{left ? "Select Reward" : "Out Of Stock"}</a> 
                 </Button>
             </Mini>
         </Small>
